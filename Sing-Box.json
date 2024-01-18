@@ -101,7 +101,7 @@
       "outbounds": [
         "direct",
 		"🇭🇰 Hong Kong",
-        "Taiwan",
+        "🇭🇰 Hong Kong",
         "🇺🇸 United States",
         "🇸🇬 Singapore",
         "🇯🇵 Japan"
@@ -117,10 +117,10 @@
       ]
     },
     {
-      "tag": "Taiwan",
+      "tag": "🇭🇰 Hong Kong",
       "type": "selector",
       "outbounds": [
-        "🇹🇼 TaiWan | 01"
+        "🇭🇰 HongKong | 01"
       ]
     },
     {
