@@ -103,17 +103,17 @@
       "tag": "proxy",
       "type": "selector",
       "outbounds": [
-		"Hong Kong",
-		"Taiwan",
-		"United States",
-		"Singapore",
-		"Japan",
+		"🇭🇰 Hong Kong",
+		"🇹🇼 Taiwan",
+		"🇺🇸 United States",
+		"🇸🇬 Singapore",
+		"🇯🇵 Japan",
 		"Others",
         "direct"
       ]
     },
 	{
-      "tag": "Hong Kong",
+      "tag": "🇭🇰 Hong Kong",
       "type": "selector",
       "outbounds": [
         "🇭🇰 HongKong | 01",
@@ -141,7 +141,7 @@
       ]
     },
 	{
-      "tag": "Taiwan",
+      "tag": "🇹🇼 Taiwan",
       "type": "selector",
       "outbounds": [
         "🇹🇼 TaiWan | 01",
@@ -153,7 +153,7 @@
       ]
     },
 	{
-      "tag": "Singapore",
+      "tag": "🇸🇬 Singapore",
       "type": "selector",
       "outbounds": [
         "🇸🇬 Singapore | 01",
@@ -167,7 +167,7 @@
       ]
     },
 	{
-      "tag": "Japan",
+      "tag": "🇯🇵 Japan",
       "type": "selector",
       "outbounds": [
         "🇯🇵 Japan | 01",
@@ -188,7 +188,7 @@
       ]
     },
 	{
-      "tag": "United States",
+      "tag": "🇺🇸 United States",
       "type": "selector",
       "outbounds": [
         "🇺🇸 United States | 01",
