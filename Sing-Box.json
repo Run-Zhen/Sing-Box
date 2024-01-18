@@ -99,12 +99,12 @@
       "tag": "🛰️ Proxy",
       "type": "selector",
       "outbounds": [
-        "direct",
 		"🇭🇰 Hong Kong",
         "🇺🇸 United States",
 		"🇹🇼 Taiwan",
         "🇸🇬 Singapore",
-        "🇯🇵 Japan"
+        "🇯🇵 Japan",
+		"direct"
       ]
     },
 	{
@@ -214,16 +214,12 @@
       ]
     },
     {
-      "type": "direct",
-      "tag": "direct"
+      "tag": "direct",
+      "type": "direct"
     },
     {
-      "type": "dns",
-      "tag": "dns-out"
-    },
-    {
-      "type": "block",
-      "tag": "block"
+      "tag": "dns-out",
+      "type": "dns"
     },
     {
       "tag": "剩余流量：30.2 GB",
@@ -395,97 +391,7 @@
     }
   ],
   "route": {
-    "auto_detect_interface": true,
-    "final": "🛰️ Proxy",
-    "rules": [
-      {
-        "protocol": "dns",
-        "outbound": "dns-out"
-      },
-      {
-        "network": "udp",
-        "port": 443,
-        "outbound": "block"
-      },
-      {
-        "clash_mode": "direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "global",
-        "outbound": "🛰️ Proxy"
-      },
-      {
-        "domain": [
-          "clash.razord.top",
-          "yacd.metacubex.one",
-          "yacd.haishan.me",
-          "d.metacubex.one"
-        ],
-        "outbound": "direct"
-      },
-      {
-        "rule_set": "GEOSITE-Openai",
-        "outbound": "🤖 OpenAI"
-      },
-      {
-        "rule_set": "GEOIP-Telegram",
-        "outbound": "📬 Telegram"
-      },
-      {
-        "rule_set": "GEOSITE-Telegram",
-        "outbound": "📬 Telegram"
-      },
-      {
-        "rule_set": "GEOSITE-Apple",
-        "outbound": "🎧 Apple"
-      },
-      {
-        "rule_set": "GEOIP-Google",
-        "outbound": "🔎 Google"
-      },
-      {
-        "rule_set": "GEOSITE-Google",
-        "outbound": "🔎 Google"
-      },
-      {
-        "rule_set": "GEOSITE-YouTube",
-        "outbound": "⛽ Youtube"
-      },
-      {
-        "rule_set": "GEOIP-Netflix",
-        "outbound": "🎦 Netflix"
-      },
-      {
-        "rule_set": "GEOSITE-Netflix",
-        "outbound": "🎦 Netflix"
-      },
-      {
-        "rule_set": "GEOSITE-Disney",
-        "outbound": "🧸 Disney+"
-      },
-      {
-        "rule_set": "GEOSITE-GEOLOCATION-!CN",
-        "outbound": "🛰️ Proxy"
-      },
-      {
-        "rule_set": "GEOSITE-Private",
-        "outbound": "direct"
-      },
-      {
-        "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
-        "rule_set": "GEOIP-CN",
-        "outbound": "China"
-      },
-      {
-        "rule_set": "GEOSITE-CN",
-        "outbound": "China"
-      }
-    ],
-    "rule_set": [
+	"rule_set": [
 	  {
         "tag": "GEOSITE-Openai",
         "type": "remote",
@@ -584,6 +490,96 @@
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
         "download_detour": "direct"
       }
-    ]
+    ],
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "outbound": "block"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "🛰️ Proxy"
+      },
+      {
+        "domain": [
+          "clash.razord.top",
+          "yacd.metacubex.one",
+          "yacd.haishan.me",
+          "d.metacubex.one"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "GEOSITE-Openai",
+        "outbound": "🤖 OpenAI"
+      },
+      {
+        "rule_set": "GEOIP-Telegram",
+        "outbound": "📬 Telegram"
+      },
+      {
+        "rule_set": "GEOSITE-Telegram",
+        "outbound": "📬 Telegram"
+      },
+      {
+        "rule_set": "GEOSITE-Apple",
+        "outbound": "🎧 Apple"
+      },
+      {
+        "rule_set": "GEOIP-Google",
+        "outbound": "🔎 Google"
+      },
+      {
+        "rule_set": "GEOSITE-Google",
+        "outbound": "🔎 Google"
+      },
+      {
+        "rule_set": "GEOSITE-YouTube",
+        "outbound": "⛽ Youtube"
+      },
+      {
+        "rule_set": "GEOIP-Netflix",
+        "outbound": "🎦 Netflix"
+      },
+      {
+        "rule_set": "GEOSITE-Netflix",
+        "outbound": "🎦 Netflix"
+      },
+      {
+        "rule_set": "GEOSITE-Disney",
+        "outbound": "🧸 Disney+"
+      },
+      {
+        "rule_set": "GEOSITE-GEOLOCATION-!CN",
+        "outbound": "🛰️ Proxy"
+      },
+      {
+        "rule_set": "GEOSITE-Private",
+        "outbound": "direct"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "GEOIP-CN",
+        "outbound": "China"
+      },
+      {
+        "rule_set": "GEOSITE-CN",
+        "outbound": "China"
+      }
+    ],
+	"auto_detect_interface": true,
+    "final": "🛰️ Proxy",
   }
 }
