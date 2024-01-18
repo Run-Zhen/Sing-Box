@@ -304,7 +304,7 @@
       "tag": "🌐 Global",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -319,7 +319,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "proxy"
+        "🛰️ Proxy"
       ]
     },
     {
