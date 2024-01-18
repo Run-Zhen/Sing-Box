@@ -1097,7 +1097,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "proxy",
+    "final": "🛰️ Proxy",
     "rules": [
       {
         "protocol": "dns",
