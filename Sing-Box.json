@@ -497,11 +497,6 @@
         "outbound": "dns-out"
       },
       {
-        "network": "udp",
-        "port": 443,
-        "outbound": "block"
-      },
-      {
         "clash_mode": "direct",
         "outbound": "direct"
       },
