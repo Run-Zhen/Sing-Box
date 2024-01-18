@@ -116,23 +116,14 @@
         "🇭🇰 HongKong | 03"
       ]
     },
-	{
+    {
       "tag": "🇹🇼 Taiwan",
       "type": "selector",
       "outbounds": [
         "🇹🇼 TaiWan | 01"
       ]
     },
-	{
-      "tag": "🇺🇸 United States",
-      "type": "selector",
-      "outbounds": [
-        "🇺🇸 United States | 01",
-        "🇺🇸 United States | 02",
-        "🇦🇺 Australia | 01"
-      ]
-    },
-	{
+    {
       "tag": "🇸🇬 Singapore",
       "type": "selector",
       "outbounds": [
@@ -140,7 +131,7 @@
         "🇸🇬 Singapore | 02"
       ]
     },
-	{
+    {
       "tag": "🇯🇵 Japan",
       "type": "selector",
       "outbounds": [
@@ -148,6 +139,14 @@
         "🇯🇵 Japan | 02",
         "🇯🇵 Japan | IPLC 10X",
         "🇯🇵 Japan | Home Broadband | 1"
+      ]
+    },
+    {
+      "tag": "🇺🇸 United States",
+      "type": "selector",
+      "outbounds": [
+        "🇺🇸 United States | 01",
+        "🇺🇸 United States | 02"
       ]
     },
     {
