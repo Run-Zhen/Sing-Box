@@ -22,7 +22,7 @@
       {
         "tag": "proxyDns",
         "address": "tls://8.8.8.8",
-        "detour": "proxy"
+        "detour": "🛰️ Proxy"
       },
       {
         "tag": "localDns",
@@ -100,7 +100,7 @@
   ],
   "outbounds": [
     {
-      "tag": "proxy",
+      "tag": "🛰️ Proxy",
       "type": "selector",
       "outbounds": [
 		"🇭🇰 Hong Kong",
@@ -202,11 +202,11 @@
         "🇺🇸 美国 Google"
       ]
     },
-    {
-      "tag": "OpenAI",
+	{
+      "tag": "🎧 Apple",
       "type": "selector",
       "outbounds": [
-		"proxy",
+        "🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -217,10 +217,10 @@
       ]
     },
     {
-      "tag": "Google",
+      "tag": "🧲 OpenAI",
       "type": "selector",
       "outbounds": [
-        "proxy",
+		"🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -231,10 +231,24 @@
       ]
     },
     {
-      "tag": "Telegram",
+      "tag": "🔎 Google",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "🛰️ Proxy",
+        "🇭🇰 Hong Kong",
+		"🇹🇼 Taiwan",
+		"🇺🇸 United States",
+		"🇸🇬 Singapore",
+		"🇯🇵 Japan",
+		"Others",
+        "direct"
+      ]
+    },
+	{
+      "tag": "🖥️ Microsoft",
+      "type": "selector",
+      "outbounds": [
+        "🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -245,10 +259,10 @@
       ]
     },
     {
-      "tag": "NETFLIX",
+      "tag": "📬 Telegram",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -259,10 +273,10 @@
       ]
     },
     {
-      "tag": "Disney+",
+      "tag": "🎦 NETFLIX",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -273,10 +287,10 @@
       ]
     },
     {
-      "tag": "Apple",
+      "tag": "🧸 Disney+",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "🛰️ Proxy",
         "🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
 		"🇺🇸 United States",
@@ -287,21 +301,7 @@
       ]
     },
     {
-      "tag": "Microsoft",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "🇭🇰 Hong Kong",
-		"🇹🇼 Taiwan",
-		"🇺🇸 United States",
-		"🇸🇬 Singapore",
-		"🇯🇵 Japan",
-		"Others",
-        "direct"
-      ]
-    },
-    {
-      "tag": "Global",
+      "tag": "🌐 Global",
       "type": "selector",
       "outbounds": [
         "proxy",
@@ -1118,7 +1118,7 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "proxy"
+        "outbound": "🛰️ Proxy"
       },
       {
         "domain": [
@@ -1131,31 +1131,31 @@
       },
       {
         "rule_set": "geosite-openai",
-        "outbound": "OpenAI"
+        "outbound": "🧲 OpenAI"
       },
       {
         "rule_set": "geosite-youtube",
-        "outbound": "Google"
+        "outbound": "🔎 Google"
       },
       {
         "rule_set": "geoip-google",
-        "outbound": "Google"
+        "outbound": "🔎 Google"
       },
       {
         "rule_set": "geosite-google",
-        "outbound": "Google"
+        "outbound": "🔎 Google"
       },
       {
         "rule_set": "geosite-github",
-        "outbound": "Google"
+        "outbound": "🔎 Google"
       },
       {
         "rule_set": "geoip-telegram",
-        "outbound": "Telegram"
+        "outbound": "📬 Telegram"
       },
       {
         "rule_set": "geosite-telegram",
-        "outbound": "Telegram"
+        "outbound": "📬 Telegram"
       },
       {
         "rule_set": "geoip-netflix",
@@ -1163,23 +1163,23 @@
       },
       {
         "rule_set": "geosite-netflix",
-        "outbound": "NETFLIX"
+        "outbound": "🎦 NETFLIX"
       },
       {
         "rule_set": "geosite-disney",
-        "outbound": "Disney+"
+        "outbound": "🧸 Disney+"
       },
       {
         "rule_set": "geosite-apple",
-        "outbound": "Apple"
+        "outbound": "🎧 Apple"
       },
       {
         "rule_set": "geosite-microsoft",
-        "outbound": "Microsoft"
+        "outbound": "🖥️ Microsoft"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "Global"
+        "outbound": "🌐 Global"
       },
       {
         "rule_set": "geosite-private",
