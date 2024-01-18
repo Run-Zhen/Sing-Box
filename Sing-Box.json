@@ -31,7 +31,8 @@
         "query_type": [
           "A",
           "AAAA"
-        ],
+        ]
+	  },
       {
         "rule_set": "geolocation-!cn",
         "server": "RemoteDNS"
