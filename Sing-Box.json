@@ -103,295 +103,126 @@
       "tag": "proxy",
       "type": "selector",
       "outbounds": [
-        "auto",
-		"HongKong",
-		"TaiWan",
+		"Hong Kong",
+		"Taiwan",
+		"United States",
 		"Singapore",
 		"Japan",
-		"America",
-        "direct",
-        "剩余流量：30.2 GB",
-        "距离下次重置剩余：13 天",
-        "套餐到期：2024-01-25",
-        "🇭🇰 HongKong | 01",
-        "🇭🇰 HongKong | 02",
-        "🇭🇰 HongKong | 03",
-        "🇹🇼 TaiWan | 01",
-        "🇯🇵 Japan | 01",
-        "🇯🇵 Japan | 02",
-        "🇯🇵 Japan | IPLC 10X",
-        "🇯🇵 Japan | Home Broadband | 1",
-        "🇸🇬 Singapore | 01",
-        "🇸🇬 Singapore | 02",
-        "🇺🇸 United States | 01",
-        "🇺🇸 United States | 02",
-        "🇰🇷 Korea | 01",
-        "🇰🇷 Korea | 海外专用",
-        "🇬🇧 United Kingdom | 01",
-        "🇦🇺 Australia | 01",
-        "🇫🇷 France | 01",
-        "🇹🇷 Turky | 01",
-        "剩余流量：34.74 GB",
-        "距离下次重置剩余：14 天",
-        "套餐到期：2024-02-01",
-        "TG群聊@suyundns",
-        "如果节点无法使用请更新订阅！！",
-        "永不失联:dnsvpn.github.io",
-        "🇭🇰 香港优选 01 | 1x HK",
-        "🇭🇰 香港福利 02 | 0.5x HK",
-        "🇭🇰 香港 01 | 1x HK",
-        "🇭🇰 香港 02 | 1x HK",
-        "🇭🇰 香港 03 | 1x HK",
-        "🇭🇰 香港 04 | 1x HK",
-        "🇭🇰 香港 05 | 1x HK",
-        "🇭🇰 香港 06 | 1x HK",
-        "🇭🇰 香港 07 | 1x HK",
-        "🇭🇰 香港 08 | 1x HK",
-        "🇹🇼 🇨🇳 台湾 01｜1x TW",
-        "🇹🇼 🇨🇳 台湾 02｜1x TW",
-        "🇹🇼 🇨🇳 台湾 03｜1x TW 抖音IP",
-        "🇯🇵 日本 01 | 1x JP",
-        "🇯🇵 日本 02 | 1x JP",
-        "🇯🇵 日本 03 | 1x JP",
-        "🇯🇵 日本 04 | 1x JP",
-        "🇸🇬 新加坡 01 | 1x SG",
-        "🇸🇬 新加坡 02 | 1x SG",
-        "🇸🇬 新加坡 03 | 1x SG",
-        "🇹🇭 泰国 01 | 1x 抖音IP",
-        "🇭🇺 匈牙利 01 | 1x 抖音IP",
-        "🇰🇷 韩国 01 | 1x KR",
-        "🇰🇷 韩国 02 | 1x KR",
-        "🇺🇸 美国 01 | 1x US",
-        "🇺🇸 美国 02 | 1x US",
-        "🇫🇷 法国 01 | 1x FR",
-        "🇩🇪 德国 01 | 1x DE",
-        "🇭🇰 香港 Hytron1",
-        "🇭🇰 香港 Hytron2",
-        "🇭🇰 香港 Eons",
-        "🇭🇰 香港 Akari",
-        "🇭🇰 香港 Polo",
-        "🇭🇰 香港 Haruka",
-        "🇭🇰 香港 Nearoute",
-        "🇭🇰 香港 Nero",
-        "🇭🇰 香港 直连 Sharon 0.6x",
-        "🇯🇵 日本 Catixs",
-        "🇯🇵 日本 Nearoute1",
-        "🇯🇵 日本 Nearoute2",
-        "🇯🇵 日本 Akari",
-        "🇯🇵 日本 NTT 0.8x",
-        "🇯🇵 日本 直连 Akari 0.6x",
-        "🇹🇼 台湾 Akari",
-        "🇹🇼 台湾 Hinet",
-        "🇸🇬 新加坡 Akari",
-        "🇸🇬 新加坡 Eons",
-        "🇸🇬 新加坡 Nearoute",
-        "🇺🇸 美国 Kirino",
-        "🇺🇸 美国 Polo",
-        "🇺🇸 美国 Upstream",
-        "🇺🇸 美国 Google",
-        "🇩🇪 德国 xTom",
-        "🇹🇷 土耳其 Mailbox",
-        "🇵🇱 波兰 OVH",
-        "🇫🇮 赫尔辛基 Hetzner",
-        "🇱🇺 卢森堡 Frantech",
-        "🇦🇷 阿根廷 WARP",
-        "🇳🇬 尼日利亚 WARP"
+		"Others",
+        "direct"
       ]
     },
     {
       "tag": "OpenAI",
       "type": "selector",
       "outbounds": [
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "America"
+		"proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
+      ]
     },
     {
       "tag": "Google",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
       ]
     },
     {
       "tag": "Telegram",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
       ]
-    },
-    {
-      "tag": "Twitter",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Facebook",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "BiliBili",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan"
-      ]
-    },
-    {
-      "tag": "Bahamut",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "TaiWan"
-    },
-    {
-      "tag": "Spotify",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "TikTok",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America"
-      ],
-      "default": "Singapore"
     },
     {
       "tag": "NETFLIX",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
       ]
     },
     {
       "tag": "Disney+",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
       ]
     },
     {
       "tag": "Apple",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
       ]
     },
     {
       "tag": "Microsoft",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Games",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Streaming",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
       ]
     },
     {
       "tag": "Global",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "HongKong"
+        "proxy",
+        "Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"Others",
+        "direct"
+      ]
     },
     {
       "tag": "China",
@@ -410,7 +241,7 @@
       ]
     },
     {
-      "tag": "HongKong",
+      "tag": "Hong Kong",
       "type": "selector",
       "outbounds": [
         "🇭🇰 HongKong | 01",
@@ -438,7 +269,7 @@
       ]
     },
     {
-      "tag": "TaiWan",
+      "tag": "Taiwan",
       "type": "selector",
       "outbounds": [
         "🇹🇼 TaiWan | 01",
@@ -485,7 +316,7 @@
       ]
     },
     {
-      "tag": "America",
+      "tag": "United States",
       "type": "selector",
       "outbounds": [
         "🇺🇸 United States | 01",
@@ -530,97 +361,6 @@
         "🇱🇺 卢森堡 Frantech",
         "🇦🇷 阿根廷 WARP"
       ]
-    },
-    {
-      "tag": "auto",
-      "type": "urltest",
-      "outbounds": [
-        "套餐到期：2024-01-25",
-        "🇭🇰 HongKong | 01",
-        "🇭🇰 HongKong | 02",
-        "🇭🇰 HongKong | 03",
-        "🇹🇼 TaiWan | 01",
-        "🇯🇵 Japan | 01",
-        "🇯🇵 Japan | 02",
-        "🇯🇵 Japan | IPLC 10X",
-        "🇯🇵 Japan | Home Broadband | 1",
-        "🇸🇬 Singapore | 01",
-        "🇸🇬 Singapore | 02",
-        "🇺🇸 United States | 01",
-        "🇺🇸 United States | 02",
-        "🇰🇷 Korea | 01",
-        "🇰🇷 Korea | 海外专用",
-        "🇬🇧 United Kingdom | 01",
-        "🇦🇺 Australia | 01",
-        "🇫🇷 France | 01",
-        "🇹🇷 Turky | 01",
-        "套餐到期：2024-02-01",
-        "TG群聊@suyundns",
-        "如果节点无法使用请更新订阅！！",
-        "永不失联:dnsvpn.github.io",
-        "🇭🇰 香港优选 01 | 1x HK",
-        "🇭🇰 香港福利 02 | 0.5x HK",
-        "🇭🇰 香港 01 | 1x HK",
-        "🇭🇰 香港 02 | 1x HK",
-        "🇭🇰 香港 03 | 1x HK",
-        "🇭🇰 香港 04 | 1x HK",
-        "🇭🇰 香港 05 | 1x HK",
-        "🇭🇰 香港 06 | 1x HK",
-        "🇭🇰 香港 07 | 1x HK",
-        "🇭🇰 香港 08 | 1x HK",
-        "🇹🇼 🇨🇳 台湾 01｜1x TW",
-        "🇹🇼 🇨🇳 台湾 02｜1x TW",
-        "🇹🇼 🇨🇳 台湾 03｜1x TW 抖音IP",
-        "🇯🇵 日本 01 | 1x JP",
-        "🇯🇵 日本 02 | 1x JP",
-        "🇯🇵 日本 03 | 1x JP",
-        "🇯🇵 日本 04 | 1x JP",
-        "🇸🇬 新加坡 01 | 1x SG",
-        "🇸🇬 新加坡 02 | 1x SG",
-        "🇸🇬 新加坡 03 | 1x SG",
-        "🇹🇭 泰国 01 | 1x 抖音IP",
-        "🇭🇺 匈牙利 01 | 1x 抖音IP",
-        "🇰🇷 韩国 01 | 1x KR",
-        "🇰🇷 韩国 02 | 1x KR",
-        "🇺🇸 美国 01 | 1x US",
-        "🇺🇸 美国 02 | 1x US",
-        "🇫🇷 法国 01 | 1x FR",
-        "🇩🇪 德国 01 | 1x DE",
-        "🇭🇰 香港 Hytron1",
-        "🇭🇰 香港 Hytron2",
-        "🇭🇰 香港 Eons",
-        "🇭🇰 香港 Akari",
-        "🇭🇰 香港 Polo",
-        "🇭🇰 香港 Haruka",
-        "🇭🇰 香港 Nearoute",
-        "🇭🇰 香港 Nero",
-        "🇭🇰 香港 直连 Sharon 0.6x",
-        "🇯🇵 日本 Catixs",
-        "🇯🇵 日本 Nearoute1",
-        "🇯🇵 日本 Nearoute2",
-        "🇯🇵 日本 Akari",
-        "🇯🇵 日本 NTT 0.8x",
-        "🇯🇵 日本 直连 Akari 0.6x",
-        "🇹🇼 台湾 Akari",
-        "🇹🇼 台湾 Hinet",
-        "🇸🇬 新加坡 Akari",
-        "🇸🇬 新加坡 Eons",
-        "🇸🇬 新加坡 Nearoute",
-        "🇺🇸 美国 Kirino",
-        "🇺🇸 美国 Polo",
-        "🇺🇸 美国 Upstream",
-        "🇺🇸 美国 Google",
-        "🇩🇪 德国 xTom",
-        "🇹🇷 土耳其 Mailbox",
-        "🇵🇱 波兰 OVH",
-        "🇫🇮 赫尔辛基 Hetzner",
-        "🇱🇺 卢森堡 Frantech",
-        "🇦🇷 阿根廷 WARP",
-        "🇳🇬 尼日利亚 WARP"
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
     },
     {
       "type": "direct",
@@ -1418,45 +1158,6 @@
         "outbound": "Telegram"
       },
       {
-        "rule_set": "geoip-twitter",
-        "outbound": "Twitter"
-      },
-      {
-        "rule_set": "geosite-twitter",
-        "outbound": "Twitter"
-      },
-      {
-        "rule_set": "geoip-facebook",
-        "outbound": "Facebook"
-      },
-      {
-        "rule_set": [
-          "geosite-facebook",
-          "geosite-instagram"
-        ],
-        "outbound": "Facebook"
-      },
-      {
-        "rule_set": "geoip-bilibili",
-        "outbound": "BiliBili"
-      },
-      {
-        "rule_set": "geosite-bilibili",
-        "outbound": "BiliBili"
-      },
-      {
-        "rule_set": "geosite-bahamut",
-        "outbound": "Bahamut"
-      },
-      {
-        "rule_set": "geosite-spotify",
-        "outbound": "Spotify"
-      },
-      {
-        "rule_set": "geosite-tiktok",
-        "outbound": "TikTok"
-      },
-      {
         "rule_set": "geoip-netflix",
         "outbound": "NETFLIX"
       },
@@ -1473,24 +1174,8 @@
         "outbound": "Apple"
       },
       {
-        "rule_set": "geosite-amazon",
-        "outbound": "Apple"
-      },
-      {
         "rule_set": "geosite-microsoft",
         "outbound": "Microsoft"
-      },
-      {
-        "rule_set": "geosite-category-games",
-        "outbound": "Games"
-      },
-      {
-        "rule_set": "geosite-hbo",
-        "outbound": "Streaming"
-      },
-      {
-        "rule_set": "geosite-primevideo",
-        "outbound": "Streaming"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
@@ -1529,20 +1214,6 @@
         "download_detour": "direct"
       },
       {
-        "tag": "geoip-twitter",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/twitter.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geoip-facebook",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/facebook.srs",
-        "download_detour": "direct"
-      },
-      {
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
@@ -1554,13 +1225,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geoip-bilibili",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/bilibili.srs",
         "download_detour": "direct"
       },
       {
@@ -1613,55 +1277,6 @@
         "download_detour": "direct"
       },
       {
-        "tag": "geosite-twitter",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-facebook",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-instagram",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/instagram.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-bilibili",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-bahamut",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bahamut.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-spotify",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-tiktok",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs",
-        "download_detour": "direct"
-      },
-      {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
@@ -1683,38 +1298,10 @@
         "download_detour": "direct"
       },
       {
-        "tag": "geosite-amazon",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/amazon.srs",
-        "download_detour": "direct"
-      },
-      {
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-category-games",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-hbo",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-primevideo",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs",
         "download_detour": "direct"
       },
       {
