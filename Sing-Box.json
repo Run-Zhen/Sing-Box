@@ -117,10 +117,11 @@
       ]
     },
     {
-      "tag": "🇨🇳 MainLand",
+      "tag": "🇺🇸 United States",
       "type": "selector",
       "outbounds": [
-        "🇹🇼 TaiWan | 01"
+        "🇺🇸 United States | 01",
+        "🇺🇸 United States | 02"
       ]
     },
     {
@@ -139,14 +140,6 @@
         "🇯🇵 Japan | 02",
         "🇯🇵 Japan | IPLC 10X",
         "🇯🇵 Japan | Home Broadband | 1"
-      ]
-    },
-    {
-      "tag": "🇺🇸 United States",
-      "type": "selector",
-      "outbounds": [
-        "🇺🇸 United States | 01",
-        "🇺🇸 United States | 02"
       ]
     },
     {
