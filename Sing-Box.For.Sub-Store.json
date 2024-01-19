@@ -329,10 +329,6 @@
         "outbound": "⛽ YouTube"
       },
       {
-        "rule_set": "GEOSITE-GitHub",
-        "outbound": "🛰️ Proxy"
-      },
-      {
         "rule_set": "GEOIP-Telegram",
         "outbound": "📬 Telegram"
       },
@@ -421,13 +417,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs",
-        "download_detour": "direct"
-      },
-	  {
-        "tag": "GEOSITE-GitHub",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs",
         "download_detour": "direct"
       },
       {
