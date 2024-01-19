@@ -90,7 +90,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -120,7 +120,7 @@
       "outbounds": []
     },
 	{
-      "tag": "📡 Region",
+      "tag": "📡 ALL",
       "type": "selector",
       "outbounds": []
     },
@@ -134,7 +134,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -148,7 +148,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -162,7 +162,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -176,7 +176,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -190,7 +190,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -204,7 +204,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -218,7 +218,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -232,7 +232,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -246,7 +246,7 @@
 		"🇺🇸 United States",
 		"🇸🇬 Singapore",
 		"🇯🇵 Japan",
-		"📡 All",
+		"📡 ALL",
         "direct"
       ]
     },
@@ -256,7 +256,7 @@
       "outbounds": [
         "direct",
         "🛰️ Proxy",
-		"📡 All"
+		"📡 ALL"
       ]
     },
     {
