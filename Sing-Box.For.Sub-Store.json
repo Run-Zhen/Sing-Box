@@ -330,7 +330,7 @@
       },
       {
         "rule_set": "GEOSITE-GitHub",
-        "outbound": "🔎 Google"
+        "outbound": "🛰️ Proxy"
       },
       {
         "rule_set": "GEOIP-Telegram",
