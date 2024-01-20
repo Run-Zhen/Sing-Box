@@ -380,11 +380,11 @@
       },
       {
         "rule_set": "GEOIP-CN",
-        "outbound": "China"
+        "outbound": "🏯 China"
       },
       {
         "rule_set": "GEOSITE-CN",
-        "outbound": "China"
+        "outbound": "🏯 China"
       }
     ],
     "rule_set": [
