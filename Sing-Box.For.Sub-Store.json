@@ -167,6 +167,20 @@
       ]
     },
 	{
+      "tag": "Ⓜ️ GitHub",
+      "type": "selector",
+      "outbounds": [
+        "🛰️ Proxy",
+        "🇭🇰 Hong Kong",
+		"🇹🇼 Taiwan",
+		"🇺🇸 United States",
+		"🇸🇬 Singapore",
+		"🇯🇵 Japan",
+		"📡 ALL",
+        "direct"
+      ]
+    },
+	{
       "tag": "🖥️ Microsoft",
       "type": "selector",
       "outbounds": [
@@ -321,12 +335,12 @@
         "outbound": "🔎 Google"
       },
 	  {
-        "rule_set": "GEOSITE-Microsoft",
-        "outbound": "🖥️ Microsoft"
+        "rule_set": "GEOSITE-GitHub",
+        "outbound": "Ⓜ️ GitHub"
       },
 	  {
-        "rule_set": "GEOSITE-GitHub",
-        "outbound": "🛰️ Proxy"
+        "rule_set": "GEOSITE-Microsoft",
+        "outbound": "🖥️ Microsoft"
       },
 	  {
         "rule_set": "GEOSITE-YouTube",
@@ -413,7 +427,7 @@
         "tag": "GEOSITE-GitHub",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs",
         "download_detour": "direct"
       },
 	  {
