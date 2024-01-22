@@ -167,6 +167,20 @@
       ]
     },
 	{
+      "tag": "⛽ YouTube",
+      "type": "selector",
+      "outbounds": [
+        "🛰️ Proxy",
+        "🇭🇰 Hong Kong",
+		"🇹🇼 Taiwan",
+		"🇺🇸 United States",
+		"🇸🇬 Singapore",
+		"🇯🇵 Japan",
+		"📡 ALL",
+        "direct"
+      ]
+    },
+	{
       "tag": "Ⓜ️ GitHub",
       "type": "selector",
       "outbounds": [
@@ -182,20 +196,6 @@
     },
 	{
       "tag": "🖥️ Microsoft",
-      "type": "selector",
-      "outbounds": [
-        "🛰️ Proxy",
-        "🇭🇰 Hong Kong",
-		"🇹🇼 Taiwan",
-		"🇺🇸 United States",
-		"🇸🇬 Singapore",
-		"🇯🇵 Japan",
-		"📡 ALL",
-        "direct"
-      ]
-    },
-	{
-      "tag": "⛽ YouTube",
       "type": "selector",
       "outbounds": [
         "🛰️ Proxy",
@@ -335,16 +335,16 @@
         "outbound": "🔎 Google"
       },
 	  {
+        "rule_set": "GEOSITE-YouTube",
+        "outbound": "⛽ YouTube"
+      },
+	  {
         "rule_set": "GEOSITE-GitHub",
         "outbound": "Ⓜ️ GitHub"
       },
 	  {
         "rule_set": "GEOSITE-Microsoft",
         "outbound": "🖥️ Microsoft"
-      },
-	  {
-        "rule_set": "GEOSITE-YouTube",
-        "outbound": "⛽ YouTube"
       },
       {
         "rule_set": "GEOIP-Telegram",
@@ -424,6 +424,13 @@
         "download_detour": "direct"
       },
 	  {
+        "tag": "GEOSITE-YouTube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs",
+        "download_detour": "direct"
+      },
+	  {
         "tag": "GEOSITE-GitHub",
         "type": "remote",
         "format": "binary",
@@ -435,13 +442,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs",
-        "download_detour": "direct"
-      },
-	  {
-        "tag": "GEOSITE-YouTube",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs",
         "download_detour": "direct"
       },
       {
