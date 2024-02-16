@@ -24,7 +24,7 @@ config.outbounds.map(i => {
   }
   // 在 美国节点 中插入全部美国节点名
   if (['🇺🇸 United States'].includes(i.tag)) {
-    i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|美国|美/i.test(p.tag)).map(p => p.tag))
+    i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
   
   if (['🇸🇬 Singapore'].includes(i.tag)) {
