@@ -35,7 +35,7 @@ config.outbounds.map(i => {
   i.outbounds.push(...proxies.filter(p => /jp|JP|🇯🇵|Japan|日本/i.test(p.tag)).map(p => p.tag))
   }
   
-  if (['🛰 External'].includes(i.tag)) {
+  if (['🛰 A-L-L'].includes(i.tag)) {
     i.outbounds.push(...proxies.filter(p => / /i.test(p.tag)).map(p => p.tag))
   }
 })
