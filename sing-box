@@ -158,11 +158,6 @@
       "outbounds":[]
     },
 	{
-      "tag": "🛰 All",
-      "type": "selector",
-      "outbounds": []
-    },
-	{
       "tag":"🎧 Apple",
       "type":"selector",
       "outbounds":[
@@ -320,6 +315,11 @@
         "🎡 Proxy",
 		"block"
       ]
+    },
+	{
+      "tag": "🛰 All",
+      "type": "selector",
+      "outbounds": []
     },
     {
       "type": "direct",
