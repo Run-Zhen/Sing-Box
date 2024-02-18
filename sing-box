@@ -133,6 +133,36 @@
       ]
     },
 	{
+      "tag":"🇭🇰 Hong Kong",
+      "type":"selector",
+      "outbounds":[]
+    },
+    {
+      "tag":"🇹🇼 Taiwan",
+      "type":"selector",
+      "outbounds":[]
+    },
+	{
+      "tag":"🇺🇸 America",
+      "type":"selector",
+      "outbounds":[]
+    },
+    {
+      "tag":"🇸🇬 Singapore",
+      "type":"selector",
+      "outbounds":[]
+    },
+    {
+      "tag":"🇯🇵 Japan",
+      "type":"selector",
+      "outbounds":[]
+    },
+	{
+      "tag": "🛰 All",
+      "type": "selector",
+      "outbounds": []
+    },
+	{
       "tag":"🎧 Apple",
       "type":"selector",
       "outbounds":[
@@ -290,36 +320,6 @@
         "🎡 Proxy",
 		"block"
       ]
-    },
-    {
-      "tag":"🇭🇰 Hong Kong",
-      "type":"selector",
-      "outbounds":[]
-    },
-    {
-      "tag":"🇹🇼 Taiwan",
-      "type":"selector",
-      "outbounds":[]
-    },
-	{
-      "tag":"🇺🇸 America",
-      "type":"selector",
-      "outbounds":[]
-    },
-    {
-      "tag":"🇸🇬 Singapore",
-      "type":"selector",
-      "outbounds":[]
-    },
-    {
-      "tag":"🇯🇵 Japan",
-      "type":"selector",
-      "outbounds":[]
-    },
-	{
-      "tag": "🛰 All",
-      "type": "selector",
-      "outbounds": []
     },
     {
       "type": "direct",
