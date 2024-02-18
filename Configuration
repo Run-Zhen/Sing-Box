@@ -167,7 +167,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "direct"
@@ -182,7 +182,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🇺🇸 America"
@@ -197,7 +197,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🎡 Proxy"
@@ -212,7 +212,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🎡 Proxy"
@@ -227,7 +227,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🇺🇸 America"
@@ -242,7 +242,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "direct"
@@ -257,7 +257,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🇺🇸 America"
@@ -272,7 +272,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🇺🇸 America"
@@ -287,7 +287,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🇺🇸 America"
@@ -302,7 +302,7 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 External",
+		"🛰 A-L-L",
         "direct"
       ],
       "default": "🎡 Proxy"
@@ -317,7 +317,7 @@
       ]
     },
 	{
-      "tag": "🛰 External",
+      "tag": "🛰 A-L-L",
       "type": "selector",
       "outbounds": []
     },
