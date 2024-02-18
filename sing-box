@@ -58,7 +58,7 @@
         "disable_cache": true
       },
       {
-        "rule_set": "geosite-cn",
+        "rule_set": "geosite-CN",
         "server": "LocalDns"
       },   
       {
