@@ -129,7 +129,6 @@
 		"🇺🇸 America",
         "🇸🇬 Singapore",
         "🇯🇵 Japan",
-		"🛰 All",
         "direct"
       ]
     },
@@ -318,7 +317,7 @@
       "outbounds":[]
     },
 	{
-      "tag": "📡 ALL",
+      "tag": "🛰 All",
       "type": "selector",
       "outbounds": []
     },
