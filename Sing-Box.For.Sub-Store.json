@@ -136,7 +136,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "direct"
     },
     {
       "tag": "🧲 OpenAI",
@@ -150,7 +151,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🇺🇸 United States"
     },
     {
       "tag": "🔎 Google",
@@ -164,7 +166,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🛰️ Proxy"
     },
 	{
       "tag": "⛽ YouTube",
@@ -178,7 +181,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🛰️ Proxy"
     },
 	{
       "tag": "Ⓜ️ GitHub",
@@ -192,7 +196,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🇺🇸 United States"
     },
 	{
       "tag": "🖥️ Microsoft",
@@ -206,7 +211,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "direct"
     },
     {
       "tag": "📬 Telegram",
@@ -220,7 +226,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🇺🇸 United States"
     },
     {
       "tag": "🎦 NETFLIX",
@@ -234,7 +241,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🇺🇸 United States"
     },
     {
       "tag": "🧸 Disney+",
@@ -248,7 +256,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🇺🇸 United States"
     },
     {
       "tag": "🌐 Global",
@@ -262,7 +271,8 @@
 		"🇯🇵 Japan",
 		"📡 ALL",
         "direct"
-      ]
+      ],
+	  "default": "🛰️ Proxy"
     },
     {
       "tag": "🏯 China",
@@ -271,7 +281,8 @@
         "direct",
         "🛰️ Proxy",
 		"📡 ALL"
-      ]
+      ],
+	  "default": "direct"
     },
     {
       "type": "direct",
