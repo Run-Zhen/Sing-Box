@@ -15,11 +15,11 @@ config.outbounds.map(i => {
     i.outbounds.push(...proxies.map(p => p.tag))
   }
   
-  if (['🇺🇸 United States'].includes(i.tag)) {
+  if (['🇭🇰 Hong Kong'].includes(i.tag)) {
     i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
   
-  if (['🇺🇸 United States'].includes(i.tag)) {
+  if (['🇹🇼 Taiwan'].includes(i.tag)) {
     i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
   // 在 美国节点 中插入全部美国节点名
@@ -27,11 +27,11 @@ config.outbounds.map(i => {
     i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
   
-  if (['🇺🇸 United States'].includes(i.tag)) {
+  if (['🇸🇬 Singapore'].includes(i.tag)) {
     i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
   
-  if (['🇺🇸 United States'].includes(i.tag)) {
+  if (['🇯🇵 Japan'].includes(i.tag)) {
     i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
   
