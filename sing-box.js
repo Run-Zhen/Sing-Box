@@ -32,7 +32,7 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies, /日本|jp|japan|Japan|🇯🇵/i))
   }
   if (['ALL'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, //i))
+    i.outbounds.push(...getTags(proxies, / /i))
   }
 })
 
