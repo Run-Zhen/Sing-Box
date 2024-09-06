@@ -8,7 +8,7 @@ let compatible
 let config = JSON.parse($files[0])
 let proxies = await produceArtifact({
   name: 'RZ',
-  type: /^1$|col/i.test(type) ? 'collection' : 'subscription',
+  type: 'collection',
   platform: 'sing-box',
   produceType: 'internal'
 })
