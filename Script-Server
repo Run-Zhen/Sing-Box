@@ -10,23 +10,29 @@ let proxies = await produceArtifact({
 config.outbounds.push(...proxies)
 
 config.outbounds.map(i => {
+  // 在 全部节点 中插入全部节点名
   if (['Proxy'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies))
+    i.outbounds.push(...proxies.map(p => p.tag))
   }
+  
   if (['🇭🇰 Hong Kong'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /港|hk|HK|hong kong|Hong Kong|🇭🇰/i))
+    i.outbounds.push(...proxies.filter(p => /hk|HK|🇭🇰|hongkong|HongKong|hong kong|Hong Kong|香港|港/i.test(p.tag)).map(p => p.tag))
   }
+  
   if (['🇹🇼 Taiwan'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /台|tw|TW|taiwan|Taiwan|🇹🇼/i))
+    i.outbounds.push(...proxies.filter(p => /tw|TW|🇹🇼|Taiwan|TaiWan|台湾|台/i.test(p.tag)).map(p => p.tag))
   }
+  // 在 美国节点 中插入全部美国节点名
   if (['🇺🇸 United States'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /美|us|US|United States|united states|🇺🇸/i))
+    i.outbounds.push(...proxies.filter(p => /us|US|🇺🇸|united states|United States|美国|美/i.test(p.tag)).map(p => p.tag))
   }
+  
   if (['🇯🇵 Japan'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /日本|jp|JP|japan|Japan|🇯🇵/i))
+  i.outbounds.push(...proxies.filter(p => /jp|JP|🇯🇵|Japan|日本/i.test(p.tag)).map(p => p.tag))
   }
+  
   if (['ALL'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, //i))
+    i.outbounds.push(...proxies.filter(p => / /i.test(p.tag)).map(p => p.tag))
   }
 })
 
