@@ -178,19 +178,18 @@
         "tag": "cn_ip",
         "format": "binary",
 		"path": "./cn_ip.srs",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "direct-out"
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
       },
       {
         "type": "remote",
         "tag": "cn_site",
         "format": "binary",
 		"path": "./cn_site.srs",
-        "url": "ttps://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "direct-out"
+        "url": "ttps://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
       }
     ],
     "auto_detect_interface": true,
+	 "concurrent_dial": true,
     "final": "Proxy"
   },
   "experimental": {
