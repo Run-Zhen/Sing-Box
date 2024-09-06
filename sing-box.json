@@ -1,0 +1,205 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "default-dns",
+        "address": "223.5.5.5",
+        "detour": "direct-out"
+      },
+      {
+        "tag": "system-dns",
+        "address": "local",
+        "detour": "direct-out"
+      },
+      {
+        "tag": "block-dns",
+        "address": "rcode://name_error"
+      },
+      {
+        "tag": "google",
+        "address": "https://dns.google/dns-query",
+        "address_resolver": "default-dns",
+        "address_strategy": "ipv4_only",
+        "strategy": "ipv4_only",
+        "client_subnet": "1.0.1.0"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "default-dns"
+      },
+      {
+        "query_type": "HTTPS",
+        "server": "block-dns"
+      },
+      {
+        "clash_mode": "direct",
+        "server": "default-dns"
+      },
+      {
+        "clash_mode": "global",
+        "server": "google"
+      },
+      {
+        "rule_set": "cn_site",
+        "server": "default-dns"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "google"
+  },
+  "route": {
+    "rules": [
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "protocol": "quic",
+        "outbound": "block-out"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "direct-out"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "Proxy"
+      },
+      {
+        "rule_set": [
+          "cn_ip",
+          "cn_site"
+        ],
+        "outbound": "direct-out"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "cn_ip",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "download_detour": "Proxy"
+      },
+      {
+        "tag": "cn_site",
+        "type": "remote",
+        "format": "binary",
+        "url": "ttps://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "download_detour": "Proxy"
+      }
+    ],
+    "final": "Proxy",
+    "auto_detect_interface": true
+  },
+  "outbounds": [
+    {
+      "tag": "Proxy",
+      "type": "selector",
+      "outbounds": [
+		"🇭🇰 Hong Kong",
+        "🇹🇼 Taiwan",
+        "🇺🇸 United States",
+        "🇯🇵 Japan",
+        "ALL",
+        "direct-out"
+      ]
+    },
+    {
+      "tag": "🇭🇰 Hong Kong",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "🇹🇼 Taiwan",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "🇺🇸 United States",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "🇯🇵 Japan",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "ALL",
+      "type": "selector",
+      "outbounds": []
+    },
+	{
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block-out"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "inbounds": [
+	{
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "::",
+      "listen_port": 5333
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 5330,
+      "sniff": true,
+      "sniff_override_destination": false,
+      "set_system_proxy": false
+    },
+    {
+      "type": "redirect",
+      "tag": "redirect-in",
+      "listen": "::",
+      "listen_port": 5331,
+      "sniff": true,
+      "sniff_override_destination": false
+    },
+    {
+      "type": "tproxy",
+      "tag": "tproxy-in",
+      "listen": "::",
+      "listen_port": 5332,
+      "network": "udp",
+      "sniff": true,
+      "sniff_override_destination": false
+    }
+  ],
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "Proxy"
+    },
+    "cache_file": {
+      "enabled": true
+    }
+  },
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  }
+}
