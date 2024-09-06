@@ -24,7 +24,7 @@
         "client_subnet": "1.0.1.0"
       }
     ],
-    "rules": [
+	"rules": [
       {
         "outbound": "any",
         "server": "default-dns"
@@ -46,7 +46,7 @@
         "server": "default-dns"
       }
     ],
-    "strategy": "ipv4_only",
+	"strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
@@ -82,7 +82,7 @@
         "outbound": "direct-out"
       }
     ],
-    "rule_set": [
+	"rule_set": [
       {
         "tag": "cn_ip",
         "type": "remote",
@@ -98,7 +98,7 @@
         "download_detour": "Proxy"
       }
     ],
-    "final": "Proxy",
+	"final": "Proxy",
     "auto_detect_interface": true
   },
   "outbounds": [
