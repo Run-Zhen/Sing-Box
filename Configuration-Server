@@ -179,16 +179,16 @@
         "tag": "cn_ip",
         "format": "binary",
 		"path": "./rule_set/cn_ip.srs",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geoip/cn.srs",
-        "download_detour": "Proxy"
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "download_detour": "direct-out"
       },
       {
         "type": "remote",
         "tag": "cn_site",
         "format": "binary",
 		"path": "./rule_set/cn_site.srs",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geosite/cn.srs",
-        "download_detour": "Proxy"
+        "url": "ttps://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "download_detour": "direct-out"
       }
     ],
     "auto_detect_interface": true,
@@ -202,7 +202,7 @@
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui/razord",
-      "external_ui_download_detour": "Proxy",
+      "external_ui_download_detour": "direct-out",
       "default_mode": "rule"
     }
   }
