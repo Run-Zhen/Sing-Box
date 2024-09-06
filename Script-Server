@@ -14,16 +14,16 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies))
   }
   if (['🇭🇰 Hong Kong'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /港|hk|hong kong|Hong Kong|🇭🇰/i))
+    i.outbounds.push(...getTags(proxies, /港|hk|HK|hong kong|Hong Kong|🇭🇰/i))
   }
   if (['🇹🇼 Taiwan'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /台|tw|taiwan|Taiwan|🇹🇼/i))
+    i.outbounds.push(...getTags(proxies, /台|tw|TW|taiwan|Taiwan|🇹🇼/i))
   }
   if (['🇺🇸 United States'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /美|us|United States|united states|🇺🇸/i))
+    i.outbounds.push(...getTags(proxies, /美|us|US|United States|united states|🇺🇸/i))
   }
   if (['🇯🇵 Japan'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /日本|jp|japan|Japan|🇯🇵/i))
+    i.outbounds.push(...getTags(proxies, /日本|jp|JP|japan|Japan|🇯🇵/i))
   }
   if (['ALL'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, //i))
