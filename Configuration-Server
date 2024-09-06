@@ -97,7 +97,7 @@
       "tag": "Proxy",
       "type": "selector",
       "outbounds": [
-		"🇭🇰 Hong Kong"
+		"🇭🇰 Hong Kong",
 		"🇹🇼 Taiwan",
         "🇺🇸 United States",
         "🇯🇵 Japan",
