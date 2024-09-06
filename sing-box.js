@@ -7,10 +7,10 @@ const compatible_outbound = {
 let compatible
 let config = JSON.parse($files[0])
 let proxies = await produceArtifact({
-  name: 'RZ'
+  name: 'RZ',
   type: /^1$|col/i.test(type) ? 'collection' : 'subscription',
   platform: 'sing-box',
-  produceType: 'internal',
+  produceType: 'internal'
 })
 
 config.outbounds.push(...proxies)
