@@ -93,28 +93,22 @@
     }
   ],
   "outbounds": [
-    {
-      "type": "direct",
-      "tag": "direct-out"
-    },
-    {
-      "type": "block",
-      "tag": "block-out"
-    },
-    {
-      "type": "dns",
-      "tag": "dns-out"
-    },
 	{
       "tag": "Proxy",
       "type": "selector",
       "outbounds": [
-        "direct-out"
+		"🇭🇰 Hong Kong"
 		"🇹🇼 Taiwan",
         "🇺🇸 United States",
         "🇯🇵 Japan",
-        "ALL"
+        "ALL",
+		"direct-out"
       ]
+    },
+	{
+      "tag": "🇭🇰 Hong Kong",
+      "type": "selector",
+      "outbounds": []
     },
     {
       "tag": "🇹🇼 Taiwan",
@@ -135,6 +129,18 @@
       "tag": "ALL",
       "type": "selector",
       "outbounds": []
+    },
+	{
+      "type": "direct",
+      "tag": "direct-out"
+    },
+    {
+      "type": "block",
+      "tag": "block-out"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
   ],
   "route": {
