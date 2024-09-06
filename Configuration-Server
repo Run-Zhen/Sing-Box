@@ -2,7 +2,6 @@
   "log": {
     "disabled": false,
     "level": "warn",
-    "output": "./run/sing-box.log",
     "timestamp": true
   },
   "dns": {
@@ -178,7 +177,7 @@
         "type": "remote",
         "tag": "cn_ip",
         "format": "binary",
-		"path": "./rule_set/cn_ip.srs",
+		"path": "./cn_ip.srs",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
         "download_detour": "direct-out"
       },
@@ -186,7 +185,7 @@
         "type": "remote",
         "tag": "cn_site",
         "format": "binary",
-		"path": "./rule_set/cn_site.srs",
+		"path": "./cn_site.srs",
         "url": "ttps://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
         "download_detour": "direct-out"
       }
@@ -196,12 +195,10 @@
   },
   "experimental": {
     "cache_file": {
-      "enabled": true,
-      "path": "./run/cache.db"
+      "enabled": true
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "ui/razord",
       "external_ui_download_detour": "direct-out",
       "default_mode": "rule"
     }
