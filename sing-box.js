@@ -1,7 +1,7 @@
 const { type, name } = $arguments
 const compatible_outbound = {
   tag: 'COMPATIBLE',
-  type: 'direct'
+  type: 'direct',
 }
 
 let compatible
@@ -10,7 +10,7 @@ let proxies = await produceArtifact({
   name: 'RZ',
   type: 'collection',
   platform: 'sing-box',
-  produceType: 'internal'
+  produceType: 'internal',
 })
 
 config.outbounds.push(...proxies)
