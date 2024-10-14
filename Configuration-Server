@@ -35,6 +35,10 @@
         "disable_cache": true
       },
       {
+        "rule_set": "GEOSITE-Private",
+        "server": "LocalDns"
+      },
+	  {
         "rule_set": "GEOSITE-CN",
         "server": "LocalDns"
       },
@@ -47,6 +51,34 @@
         "server": "ProxyDns"
       },
       {
+        "rule_set": "GEOSITE-Apple@CN",
+        "server": "LocalDns"
+      },
+	  {
+        "rule_set": "GEOSITE-Apple",
+        "server": "ProxyDns"
+      },
+	  {
+        "rule_set": "GEOSITE-Google",
+        "server": "ProxyDns"
+      },
+	  {
+        "rule_set": "GEOSITE-YouTube",
+        "server": "ProxyDns"
+      },
+	  {
+        "rule_set": "GEOSITE-GitHub",
+        "server": "ProxyDns"
+      },
+	  {
+        "rule_set": "GEOSITE-Microsoft@CN",
+        "server": "LocalDns"
+      },
+	  {
+        "rule_set": "GEOSITE-Microsoft",
+        "server": "ProxyDns"
+      },
+	  {
         "rule_set": "GEOSITE-GEOLOCATION-!CN",
         "server": "ProxyDns"
       }
