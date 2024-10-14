@@ -142,6 +142,7 @@
       "tag": "Apple",
       "type": "selector",
 	  "outbounds": [
+		"Proxy",
 		"Hong Kong",
 		"Taiwan",
 		"United States",
@@ -156,6 +157,7 @@
       "tag": "Google",
       "type": "selector",
 	  "outbounds": [
+		"Proxy",
 		"Hong Kong",
 		"Taiwan",
 		"United States",
@@ -170,6 +172,7 @@
       "tag": "YouTube",
       "type": "selector",
 	  "outbounds": [
+		"Proxy",
 		"Hong Kong",
 		"Taiwan",
 		"United States",
@@ -184,6 +187,7 @@
       "tag": "GitHub",
       "type": "selector",
 	  "outbounds": [
+		"Proxy",
 		"Hong Kong",
 		"Taiwan",
 		"United States",
@@ -212,6 +216,7 @@
       "tag": "Microsoft",
       "type": "selector",
 	  "outbounds": [
+		"Proxy",
 		"Hong Kong",
 		"Taiwan",
 		"United States",
