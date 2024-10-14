@@ -175,7 +175,7 @@
         "tag": "cn_site",
 		"type": "remote",
         "format": "binary",
-        "url": "ttps://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
 		"download_detour": "Proxy"
       }
     ],
