@@ -80,15 +80,6 @@
       "listen_port": 5331,
       "sniff": true,
       "sniff_override_destination": false
-    },
-    {
-      "type": "tproxy",
-      "tag": "tproxy-in",
-      "listen": "::",
-      "listen_port": 5332,
-      "network": "udp",
-      "sniff": true,
-      "sniff_override_destination": false
     }
   ],
   "outbounds": [
