@@ -92,7 +92,8 @@
 		"Japan",
 		"ALL",
         "direct"
-      ]
+      ],
+	  "default": "United States"
     },
 	{
       "tag": "Hong Kong",
@@ -227,6 +228,21 @@
       ],
 	  "default": "Proxy"
     },
+	{
+      "tag": "China",
+      "type": "selector",
+	  "outbounds": [
+		"Proxy",
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "direct"
+    },
     {
       "type": "direct",
       "tag": "direct"
@@ -310,15 +326,15 @@
       },
       {
         "rule_set": "GEOSITE-Private",
-        "outbound": "direct"
+        "outbound": "China"
       },
 	  {
         "rule_set": "GEOSITE-CN",
-        "outbound": "direct"
+        "outbound": "China"
       },
       {
         "rule_set": "GEOIP-CN",
-        "outbound": "direct"
+        "outbound": "China"
       }
     ],
     "rule_set": [
