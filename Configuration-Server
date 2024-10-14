@@ -326,7 +326,7 @@
         "tag": "GEOSITE-Apple@CN",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple%40cn.srs",
+        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/blob/sing/geo/geosite/apple%40cn.srs",
         "download_detour": "direct"
       },
 	  {
@@ -375,7 +375,7 @@
         "tag": "GEOSITE-Microsoft@CN",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft%40cn.srs",
+        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/blob/sing/geo/geosite/microsoft%40cn.srs",
         "download_detour": "direct"
       },
 	  {
