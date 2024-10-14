@@ -85,37 +85,37 @@
       "tag": "Proxy",
       "type": "selector",
       "outbounds": [
-		"🇭🇰 Hong Kong",
-		"🇹🇼 Taiwan",
-		"🇺🇸 United States",
-		"🇸🇬 Singapore",
-		"🇯🇵 Japan",
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
 		"ALL",
         "direct"
       ]
     },
 	{
-      "tag": "🇭🇰 Hong Kong",
+      "tag": "Hong Kong",
       "type": "selector",
       "outbounds": []
     },
 	{
-      "tag": "🇹🇼 Taiwan",
+      "tag": "Taiwan",
       "type": "selector",
       "outbounds": []
     },
 	{
-      "tag": "🇺🇸 United States",
+      "tag": "United States",
       "type": "selector",
       "outbounds": []
     },
 	{
-      "tag": "🇸🇬 Singapore",
+      "tag": "Singapore",
       "type": "selector",
       "outbounds": []
     },
 	{
-      "tag": "🇯🇵 Japan",
+      "tag": "Japan",
       "type": "selector",
       "outbounds": []
     },
@@ -123,6 +123,104 @@
       "tag": "ALL",
       "type": "selector",
       "outbounds": []
+    },
+	{
+      "tag": "Apple@CN",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "direct"
+    },
+	{
+      "tag": "Apple",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "Proxy"
+    },
+	{
+      "tag": "Google",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "Proxy"
+    },
+	{
+      "tag": "YouTube",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "Proxy"
+    },
+	{
+      "tag": "GitHub",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "Proxy"
+    },
+	{
+      "tag": "Microsoft@CN",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "direct"
+    },
+	{
+      "tag": "Microsoft",
+      "type": "selector",
+	  "outbounds": [
+		"Hong Kong",
+		"Taiwan",
+		"United States",
+		"Singapore",
+		"Japan",
+		"ALL",
+        "direct"
+      ],
+	  "default": "Proxy"
     },
     {
       "type": "direct",
@@ -166,6 +264,42 @@
         "outbound": "direct"
       },
 	  {
+        "rule_set": "GEOSITE-Apple@CN",
+        "outbound": "Apple@CN"
+      },
+	  {
+        "rule_set": "GEOIP-Apple",
+        "outbound": "Apple"
+      },
+	  {
+        "rule_set": "GEOSITE-Apple",
+        "outbound": "Apple"
+      },
+	  {
+        "rule_set": "GEOIP-Google",
+        "outbound": "Google"
+      },
+      {
+        "rule_set": "GEOSITE-Google",
+        "outbound": "Google"
+      },
+	  {
+        "rule_set": "GEOSITE-YouTube",
+        "outbound": "YouTube"
+      },
+	  {
+        "rule_set": "GEOSITE-GitHub",
+        "outbound": "GitHub"
+      },
+	  {
+        "rule_set": "GEOSITE-Microsoft@CN",
+        "outbound": "Microsoft@CN"
+      },
+	  {
+        "rule_set": "GEOSITE-Microsoft",
+        "outbound": "Microsoft"
+      },
+	  {
         "ip_is_private": true,
         "outbound": "direct"
       },
@@ -183,6 +317,69 @@
       }
     ],
     "rule_set": [
+	  {
+        "tag": "GEOSITE-Apple@CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple%40cn.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOIP-Apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOSITE-Apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOIP-Google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOSITE-Google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOSITE-YouTube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOSITE-GitHub",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOSITE-Microsoft@CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft%40cn.srs",
+        "download_detour": "direct"
+      },
+	  {
+        "tag": "GEOSITE-Microsoft",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs",
+        "download_detour": "direct"
+      },
 	  {
         "tag": "GEOSITE-GEOLOCATION-!CN",
         "type": "remote",
