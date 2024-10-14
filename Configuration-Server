@@ -180,8 +180,7 @@
       {
         "rule_set": "GEOIP-CN",
         "outbound": "direct"
-      },
-      
+      }
     ],
     "rule_set": [
 	  {
